@@ -1,0 +1,21 @@
+
+
+table {
+  justify-content: center;
+  margin-top: 5%;
+}
+
+button {
+  font-family: "Roboto Mono", sans-serif;
+  border:none;
+  color:white;
+  background-color:#008000;
+  margin-top: 80px;
+  margin-left: 20px;
+  justify-content:left;
+}
+
+.column {
+  padding-right: 5%;
+  font-weight: bold;
+}
