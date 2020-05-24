@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap">
+    <link rel="stylesheet" href="styles.css">
 
 <style>
 
 
 body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto Mono", sans-serif};
 
-#contactBtn {
-
-}
 
 </style>
 
@@ -38,12 +36,12 @@ body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto Mono", sans-serif};
 <div class="w3-row-padding w3-padding-16 w3-center" id="food">
   <div class="w3-quarter">
     <img src="https://lh3.googleusercontent.com/IzTbqxs9mXg37nxywji9NzhIZ2HI1S-eTOZQaap4qZRDg26K7c--nVQoUtPEdfjMEnRIbxvawB5jTby73ZzZJAN-F3tHK64CBa2uKK0TP0F1zk4tnWXtKZ8feTNIM8WnTo0Pf-9Yva3CgoGamSNO7b0pK-xUANPkKbVnSt1D3LiNOjWAixmVmo2TbQZH73HBmf10kWh8YCmodsMst5EMxpp5nqA8UryyL4_qumNt5-0dyQzZiOsCIk_B5KuHDinbI9Hb50NVKYDAFe68h5yE9PUGbLa1VqeezUwsmdm9kg5XvFt3Ud8F9PsesLBa-cIXPB5n30M0orYeRNgftT-_xOoJeKi7BQYs89W8lr8rMsoTMROTtSAYVqdkURIJQ8oFq9EQ6c8Ea3TPhXaarpgjTeHK8L-niXLNrSb1j-0LUXjBK06g0O-pSmr7l-MFPB_2Ighk1OnptxKy-O2zz_DpKcKNXNwuLLkO79Yfn56kQ4117riQf0zIM8rSnDkbN7ieuadHrQiEkJS_CyqZeu93qBeQXUQxsRPO5LlOH1UMaP3H7H0I5-CF83_UvCXqwrav9wbUz1SNpqP8ZiBHQgU9DC91iG3CQLvM9UNGAp0eb6uQdNoM-E_OoQTzW0TgfLBCOZCpht8-hFze5re44XZ21-3g7lUPeQ1s9gx2DFhiV9gxwvPlE_apr_l2mP4g=w1008-h1345-no" alt="Buildings in Rome" style="width:100%">
-  <a href="page2.html"><button type="button" style="background-color:white;font-size:24px;border:none;margin-top:2%;">Rome, Italy</button></a>
+  <a href="page2.html"><button type="button" style="background-color:white;font-size:24px;border:none;margin-top:2%;" onclick="soundPlay()">Rome, Italy</button></a>
   <!--  <h3>Rome, Italy</h3> -->
     <p>a classic</p>
   </div>
   <div class="w3-quarter">
-    <img id="statue" src="https://lh3.googleusercontent.com/Ba-kvPsHTcgHvW6RFYggX5_ox7KSwVO50LcB_HmLilVDyTwoCwzW_K9DpxZpOU6qjjAailJdEjzanHx6O5RAiUMstVLGGsvggLUKCoK3sfYH_NbZNxVTidLoyYoex6NYCufvnEC7I-bJv-yU75IuuOjB9gaIDxouRbo4LXTrrlRTrU0Ep82DzgH-NFEZb_9EC1K9cprAE0vbpkPuOM1jm6wv5xuQxNE6H56Mfr4g7zOAq9ZSgAJ64Y9691fse1x4R4AQ5C11zv-m97EFyRkzyUGDYElAI2FwR-LNs2DS20nN4l8z5MDMImKgP90myoBXJrW9z7yTcaJMA_RM1jz1QKruMZSehSctnKx_WUVYY9jNvT0OecK7b2wHIC5-ZP0EBKNV2DADF-KZcSMuVnEZOEUAKgNPx-nBgHJXUjU9QAo5DV160UVkHUWP2BvqxM5K-_Esa_RkLu6DKJ9UgZS9KW3nRI7qIvv3u7JZAl7rSmfL0bR7Y7XntXjfVhYUO06iotb_6mQX1uDCZISxp2anFMNGtNkYCbq0wExpbLTanx6UNdnk2dGjCvLhtJrK3NXHeVb0oNykpGQeUZ_PogpZF_wzaO_2nfWIiE7YpNq2HKSWfEJLdYfV6QmmzJaobIZ6Rc6zhXH51ZB0l7UaHDZLtfOcThAcwvgto1dNZOLRyMLgfvsQ5uH-c0BikZHq=w1008-h1345-no" alt="Statue" style="width:100%">
+    <img id="statue" src="statue.JPG" alt="Statue" style="width:100%">
   <button type="button" style="background-color:white;font-size:24px;border:none;margin-top:2%;">Florence, Italy</button>
   <!--  <h3>Florence, Italy</h3> -->
     <p>a palace of history and art</p>
@@ -101,7 +99,7 @@ body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto Mono", sans-serif};
 <!-- Contact Me Button -->
 <div class="contact">
   <center>
-  <a href="http://endless.horse/"><button style="margin-bottom: 15%; color:white; border:none; text-align: center; font-family: Roboto Mono, sans-serif; background-color: black;" type="button">Contact Me</button></a>
+  <a href="http://endless.horse/"><button id="contactBtn" type="button" onclick="trickedAlert()">Contact Me</button></a>
 </center>
 </div>
 
@@ -114,12 +112,9 @@ body, h1, h2, h3, h4, h5, h6 {font-family: "Roboto Mono", sans-serif};
 var date = new Date();
 document.getElementById("date").innerHTML = date.toLocaleDateString();
 
-document.getElementById("dc_btn").addEventListener("click", movePageDC);
-function movePageDC() {
-
+function trickedAlert() {
+  alert("you have been tricked... muahaha");
 }
-
-
 </script>
 
 
