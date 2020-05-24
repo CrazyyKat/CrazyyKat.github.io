@@ -5,18 +5,39 @@
       <title>Rome, Italy</title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap">
       <link rel="stylesheet" href="styles.css">
+
 <style>
+
+  /*-orginal code by W3Schools https://www.w3schools.com/css/tryit.asp?filename=trycss3_media_queries1*/
+body {
+background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+body {
+  background-color: #FBEAD3;
+}
+}
+  /*end of code*/
+
+
+body, h1, h2, h3, h4, h5, h6, p {font-family: "Roboto Mono", sans-serif};
+
   #text {
     margin-right:40px;
     margin-left:40px;
   }
 
-  body, h1, h2, h3, h4, h5, h6, p {font-family: "Roboto Mono", sans-serif};
+
 </style>
 
   </head>
 
-  <body>
+  <body onload="pageLoad()">
+
+<audio controls>
+  <source src="Italian_Tarentella_full_mix_mp3.mp3">
+</audio>
 
 <center><h1 class="title" style="font-size:40px;">Rome, Italy 🍝</h1></center>
 <center><h3 class="title" style="color:#008000; margin-top:-20px; margin-bottom:40px;">June 19-21, 2019</h3></center>
@@ -47,7 +68,18 @@
 </table>
 </center>
 
-<a href="index.html"> <button type="button" name="button">Return to Home</button> </a>
+<a href="index.html"> <button id="returnBtn" type="button" name="button">Return to Home</button> </a>
+
+
+<script type="text/javascript">
+
+  function pageLoad() {
+    alert('welcome to Rome!');
+  }
+
+</script>
+
+
   </body>
 
 
